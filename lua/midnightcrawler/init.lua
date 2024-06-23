@@ -340,4 +340,5 @@ function midnightcrawler.colorscheme()
   set_groups()
 end
 
+print("wof")
 return midnightcrawler
