@@ -340,5 +340,4 @@ function midnightcrawler.colorscheme()
   set_groups()
 end
 
-print("setting midnight ...")
 return midnightcrawler
