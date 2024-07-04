@@ -49,6 +49,7 @@ local white_smoke = '#b3b1ad'
 local dark_silver = '#0d1016'
 local darky_silver = '#3e4b59'
 local safari_grey = '#171b21'
+local dump_grey ='#282C34'
 local silver_2 = '#304357'
 local silver_3 = '#393f4d'
 local silver_4 = '#767e91'
@@ -71,7 +72,8 @@ return {
 	red_rose = red_rose,
 	dark_rose = dark_rose,
 	safari_grey = safari_grey,
-	
+	dump_grey = dump_grey,
+
 	cursor_line = silver_6,
 	accent = true_gold,
 	bg = pitch_black,

@@ -281,22 +281,6 @@ local function set_groups()
     VM_Insert = { sp = colors.fg, underline = true },
     VM_Mono = { fg = colors.bg, bg = colors.comment },
 
-		-- Chaos
-		ChaosComment = { link = 'Comment' },
-		ChaosLine = { link = 'Normal' },
-		ChaosSectionOpen = { fg = colors.golden, bold = true },
-		ChaosSectionName = { fg = colors.golden, bold = true },
-		ChaosTag = { fg = colors.blue_sky, bold = true },
-		ChaosTags = { fg = colors.error },
-		ChaosGreen = { fg = colors.green, bold = true },
-		ChaosWorkload = { fg = colors.golden },
-		ChaosImportant = { fg = colors.red_rose },
-		ChaosInfo = { fg = colors.fg, bold = true },
-		ChaosType = { fg = colors.fg, bold = true },
-		ChaosCite = { fg = colors.fg, italic = true },
-		ChaosPreProcessPair = { fg = colors.blue_sky },
-		ChaosLog = { fg = colors.green },
-
 		-- git diff
 		diffFile = { link = 'Statement' },
 		gitDiff = { fg = colors.white_smoke },
