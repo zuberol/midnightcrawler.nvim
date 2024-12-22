@@ -1,41 +1,6 @@
 
--- guifg=#b3b1ad guibg=#0a0e14
--- blue #3388f8 #428acd
--- pinky #c58ce3
--- violet #a686f8
--- black #0f111a #080807
--- golden #f4a938
---
--- nightshift TODO dfas fsa
--- red #ec3960 
--- golden   #c8a266  #c39e64 
--- yellow #fffe96 
--- violet #421880 
--- #C39 
--- blue #7fb1f9  #6faef9
--- dark blue #3388f8 
--- pink #c58ce3  
--- rose #ef83c3 
--- orangy #f18e67  #ef6b5d 
--- greeny #90fab1  #78c89a  
--- greeny #59be82 
--- background bluey-black #12162b
--- background ayu guifg=#b3b1ad guibg=#0a0e14
--- violety #84a0f9 #b541f7 
--- dark grey #242a35
--- rose #ef83c6 
---#363A4D
--- Customization for Pmenu
---vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#282C34", fg = "NONE" })
---vim.api.nvim_set_hl(0, "Pmenu", { fg = "#C5CDD9", bg = "#22252A" })
-
--- vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = "#C5CDD9", bg = "#7E8294" })
---vim.api.nvim_set_hl(0, "CmpItemKindFile", { fg = "#C5CDD9", bg = "#7E8294" })
-
-
-
 local ripe_orange = '#ff4f0f'
-local true_gold = '#f4a938'
+local true_gold = '#ff8200'
 local pitch_black = '#000000'
 local blue_sky = '#59c2ff'
 local blue_sky_2 = '#39bae6'
