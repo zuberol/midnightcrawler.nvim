@@ -1,11 +1,8 @@
 local base = require'midnightcrawler.base'
-local extra = require'midnightcrawler.extra'
-local groups = require'midnightcrawler.groups'
-local old_groups = require'midnightcrawler.old'
 local midnightcrawler = {}
 
-local function set_groups()
-  for group, parameters in pairs(old_groups) do
+local function set_groups(groups)
+  for group, parameters in pairs(groups) do
     vim.api.nvim_set_hl(0, group, parameters)
   end
 end
@@ -41,7 +38,6 @@ function midnightcrawler.colorscheme()
   vim.g.colors_name = 'midnightcrawler'
 
 	set_terminal_colors()
-  set_groups(groups)
 end
 
 return midnightcrawler

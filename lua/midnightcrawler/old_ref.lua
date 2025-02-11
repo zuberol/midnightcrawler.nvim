@@ -2,7 +2,7 @@ local base = require'midnightcrawler.base'
 local extra = require'midnightcrawler.extra'
 
 return {
-	Normal = { fg = base.fg, bg = base.bg },
+	Normal = { fg = base.fg, bg = 'NONE' },
 	NormalFloat = { bg = extra.safari_grey },
 	FloatBorder = {  },
 	FloatTitle = { fg = base.fg },
