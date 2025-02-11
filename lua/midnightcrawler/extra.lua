@@ -1,5 +1,4 @@
-
-local base = require'base'
+local base = require'midnightcrawler.base'
 
 local ripe_orange = '#ff4f0f'
 local true_gold = '#ff8200'

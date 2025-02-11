@@ -1,4 +1,4 @@
-local base = require'colors.base'
+local base = require'midnightcrawler.base'
 --[[
 LspReferenceText          used for highlighting "text" references *hl-LspReferenceRead*
 LspReferenceRead          used for highlighting "read" references *hl-LspReferenceWrite*
@@ -44,6 +44,7 @@ LspSignatureActiveParameter
 
 local M = {}
 
+M['@lsp.type.string'] = {}
 M['@lsp.type.string'].fg = base.green
 
 return M

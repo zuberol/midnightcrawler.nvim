@@ -1,7 +1,9 @@
 local M = {}
 
 M.foreground = '#ededed'
+M.fg = M.foreground
 M.background = '#000000'
+M.bg = M.background
 M.cursorColor = '#ededed'
 
 M.color0 = '#0d1016'
