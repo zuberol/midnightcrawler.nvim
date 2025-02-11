@@ -2,9 +2,63 @@ local base = require'midnightcrawler.colors.base'
 
 local none = "NONE"
 
-local nvim = {
-	-- Normal = { fg = base.white_dark, bg = none }
-	Normal = { fg = base.yellow_dark, bg = none }
+--'#404755'
+local NvimDarkGrey3 = '#2c2e33'
+local DarkGrey = '#0f1218'
+local custom = {
+	None = { fg = none, bg = none },
+	PanelActive = { fg = none, bg = DarkGrey },
+	PanelActiveSel = { fg = base.yellow_dark, bg = DarkGrey },
+}
+
+local panels = {
+	Normal = { fg = base.white_dark, bg = none },
+	-- Normal = { fg = base.yellow_dark, bg = none }
+	NormalFloat = custom.PanelActive,
+	ColorColumn = custom.None,
+	CursorLine = PanelActive,
+	StatusLine = custom.None,
+	StatusLineNC = custom.None,
+	TabLine = custom.None,
+	TabLineSel = PanelActiveSel,
+	Pmenu = custom.PanelActive,
+	PmenuSel = custom.PanelActiveSel,
+	WinSeparator = { fg = base.bg, bg = base.bg },
+	WildMenu = custom.PanelActiveSel,
+}
+
+local cursor = {
+	Cursor = { fg = base.white_light, bg = none},
+	lCursor = { fg = base.white_light, bg = none},
+	CursorIM = { fg = base.white_light, bg = none},
+	TermCursor = { link = 'Cursor' },
+	TermCursorNC = { link = 'Cursor' },
+}
+
+local special = {
+	NonText = { fg = base.magenta_dark, bg = none },
+	Special = { fg = base.yellow_light, bg = none },
+	EndOfBuffer = { fg = base.magenta_dark, bg = none },
+}
+
+local diff = {
+	DiffAdd = { fg = base.green_light, bg = none },
+	DiffChange = { fg = base.blue_light, bg = none },
+	DiffDelete = { fg = base.red_light, bg = none },
+	DiffText =  { fg = base.blue_light, bg = none },
+}
+
+local linenr = {
+	LineNr = { fg = base.white_dark, bg = none },
+	LineNrAbove = { link = 'LineNr' },
+	LineNrBelow = { link = 'LineNr' },
+	CursorLineNr = { link = 'LineNr' },
+}
+
+local search = {
+	IncSearch	= { fg = base.black, bg = base.cyan_light },
+	Substitute	= { fg = base.black, bg = base.green_light },
+	Search	= { fg = base.black, bg = base.green_light },
 }
 
 local syntax = {
@@ -28,4 +82,12 @@ local syntax = {
 	-- ['@lsp'] = { fg = base.cyan_light, bg = none },
 }
 
-return vim.tbl_deep_extend('error', {}, syntax, nvim)
+local misc = {
+	ErrorMsg = { fg = base.red_dark, bg = none },
+	WarningMsg = { fg = base.yellow_dark, bg = none },
+
+	Conceal = { fg = base.green_light, bg = none }, -- ??
+	Folded = { fg = base.cyan_light, bg = none },
+}
+
+return vim.tbl_deep_extend('error', {}, panels, cursor, special, diff, linenr, search, syntax, misc)
