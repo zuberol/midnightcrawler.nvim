@@ -1,4 +1,4 @@
-local base = require'midnightcrawler.base'
+local base = require'midnightcrawler.colors.base'
 local midnightcrawler = {}
 
 local function set_groups(groups)
