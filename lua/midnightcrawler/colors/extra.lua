@@ -28,3 +28,5 @@ local silver_3 = '#393f4d'
 local silver_4 = '#767e91'
 local silver_5 = '#767e91'
 local silver_6 = '#404755'
+
+local NvimDarkGrey3 = '#2c2e33'
