@@ -1,4 +1,3 @@
-local base = require'midnightcrawler.colors.base'
 local midnightcrawler = {}
 
 local function set_groups(groups)
@@ -8,6 +7,7 @@ local function set_groups(groups)
 end
 
 local function set_terminal_colors()
+	local base = require'midnightcrawler.colors.base'
   vim.g.terminal_color_0 = base.bg
   vim.g.terminal_color_1 = base.color1
   vim.g.terminal_color_2 = base.color2
@@ -38,6 +38,7 @@ function midnightcrawler.colorscheme()
   vim.g.colors_name = 'midnightcrawler'
 
 	set_terminal_colors()
+	set_groups(require'midnightcrawler.groups')
 end
 
 return midnightcrawler

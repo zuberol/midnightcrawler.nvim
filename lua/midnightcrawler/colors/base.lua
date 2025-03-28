@@ -7,10 +7,11 @@ M.cursorColor = M.foreground
 M.background = '#000000'
 M.bg = M.background
 
-M.color0 = '#0d1016' -- StatusLine
-M.color8 = '#404755' -- CursorLine
+M.color0 = '#0d1016'
+M.color8 = '#404755'
 M.black_dark = M.color0
 M.black_light = M.color8
+M.black = '#000000'
 
 M.color1 = '#ff3333'
 M.color9 = '#ec3960'
@@ -34,8 +35,8 @@ M.blue_light = M.color12
 
 M.color5 = '#a500ab'
 M.color13 = '#c400ff'
-M.magenta_dark = color5
-M.magenta_light = color13
+M.magenta_dark = M.color5
+M.magenta_light = M.color13
 
 M.color6 = '#8abeb7'
 M.color14 = '#15f1d5'
@@ -46,5 +47,6 @@ M.color7 = '#b3b1ad'
 M.color15 = '#ffffff'
 M.white_dark = M.color7
 M.white_light = M.color15
+M.white = M.white_light
 
 return M
