@@ -19,7 +19,7 @@ local panels = {
 	FloatBorder = { fg = none, bg = none },
 	FloatTitle = { fg = base.fg, bg = none, bold = true },
 	FloatFooter = { fg = base.fg, bg = none, bold = true },
-	ColorColumn = custom.None,
+	ColorColumn = { fg = none, bg = DarkGrey },
 	CursorLine = custom.PanelActive,
 	StatusLine = custom.None,
 	StatusLineNC = custom.None,
