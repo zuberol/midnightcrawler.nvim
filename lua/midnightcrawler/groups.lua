@@ -110,6 +110,7 @@ local syntax = {
 	Comment = { fg = base.black_light, bg = none },
 	Statement = { fg = base.magenta_light, bg = none },
 	PreProc = { fg = base.yellow_dark, bg = none },
+	LspInlayHint = { fg = base.black_light, bg = none },
 }
 
 local msg = {
@@ -191,4 +192,10 @@ local blink_nvim = {
 	BlinkCmpGhostText = { fg = base.yellow_light, bg = none, bold = false },
 }
 
-return vim.tbl_deep_extend('error', {}, panels, cursor, special, diff, linenr, search, syntax, msg, nvim, diagnostic, qf, gitsigns, spell, misc, blink_nvim)
+local telescope = {
+	TelescopeNormal = { fg = none, bg = DarkGrey },
+	TelescopeBorder = { fg = DarkGrey, bg = DarkGrey },
+	TelescopePromptBorder = { fg = none, bg = DarkGrey },
+}
+
+return vim.tbl_deep_extend('error', {}, panels, cursor, special, diff, linenr, search, syntax, msg, nvim, diagnostic, qf, gitsigns, spell, misc, blink_nvim, telescope)
