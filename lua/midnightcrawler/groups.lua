@@ -111,6 +111,7 @@ local syntax = {
 	Statement = { fg = base.magenta_light, bg = none },
 	PreProc = { fg = base.yellow_dark, bg = none },
 	LspInlayHint = { fg = base.black_light, bg = none },
+	LspReferenceTarget = { fg = none, bg = none }, -- dont highlight <cword> on hover
 }
 
 local msg = {
