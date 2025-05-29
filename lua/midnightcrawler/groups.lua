@@ -4,6 +4,7 @@ local none = "NONE"
 
 local DarkGrey = '#0f1218'
 local another_grey = '#1f2228'
+local float_grey = "#121526"
 local another_white = '#b3bbc8'
 local custom = {
 	None = { fg = none, bg = none },
@@ -63,6 +64,7 @@ local diff = {
 	DiffChange = { fg = base.blue_light, bg = none },
 	DiffDelete = { fg = base.red_dark, bg = none },
 	DiffText =  { fg = base.blue_dark, bg = none },
+	PreviewDiffDelete = { fg = base.red_dark, bg = float_grey },
 }
 
 local linenr = {
